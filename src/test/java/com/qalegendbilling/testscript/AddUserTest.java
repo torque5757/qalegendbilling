@@ -6,7 +6,7 @@ import java.util.List;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
-import com.demowebshop.utilities.RandomUtility;
+
 import com.qalegendbilling.automationcore.Base;
 import com.qalegendbilling.listeners.TestListeners;
 import com.qalegendbilling.pages.AddUserPage;
@@ -14,6 +14,7 @@ import com.qalegendbilling.pages.HomePage;
 import com.qalegendbilling.pages.LoginPage;
 import com.qalegendbilling.pages.UserPage;
 import com.qalegendbilling.utilities.ExcelUtility;
+import com.qalegendbilling.utilities.RandomUtility;
 
 public class AddUserTest extends Base {
 	ThreadLocal<ExtentTest> extentTest = TestListeners.getTestInstance();
