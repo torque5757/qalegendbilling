@@ -48,11 +48,11 @@ public class Base {
 //    }
 
 	@BeforeMethod(alwaysRun = true)
-	 @Parameters({"browser"})
-	public void setUP(String browserName) {
+	 //@Parameters({"browser"})
+	public void setUP() {
 		String browser = prop.getProperty("browser");
 		String url = prop.getProperty("url");
-		driver = DriverFactory.testInitialization(browserName);
+		driver = DriverFactory.testInitialization(browser);
 		driver.get(url);
 	}
 
